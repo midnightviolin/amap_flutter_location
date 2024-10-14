@@ -27,6 +27,11 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
+
+    if (project.android.hasProperty("namespace")) {
+        namespace = "com.amap.flutter.location.amap_flutter_location"
+    }
+
     lintOptions {
         disable 'InvalidPackage'
     }
